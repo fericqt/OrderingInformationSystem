@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = mysqli_fetch_assoc($result);
 
         $_SESSION["userName"] = $row["Username"];
+        $_SESSION["userIdTrack"] = $row["IdTrack"];
         $_SESSION["userType"] = $row["UserType"];
 
 
