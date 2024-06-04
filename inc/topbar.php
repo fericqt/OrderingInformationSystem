@@ -1,5 +1,6 @@
     <?php
     $userName = $_SESSION['userName'];
+    $userId = $_SESSION['userIdTrack'];
     ?>
 
 

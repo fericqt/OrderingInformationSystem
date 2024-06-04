@@ -46,7 +46,7 @@
                                      tblo.ProcessBy as ProcessBy,
                                      tblo.DateOrdered as DateOrdered,
                                      tblo.DateProcessed as DateProcessed
-                              FROM tblorders tblo  INNER JOIN tblusers tblu ON tblo.UserIdTrack =  tblu.IdTrack WHERE tblo.Status = 'OnQueue'";
+                              FROM tblorders tblo  INNER JOIN tblusers tblu ON tblo.UserIdTrack =  tblu.IdTrack WHERE tblo.Status = 'OnQueue' AND tblo.UserIdTrack = '$userId'";
                     $result = mysqli_query($conn, $query);
 
                     // Display users in table rows
@@ -107,7 +107,7 @@
                                      tblo.ProcessBy as ProcessBy,
                                      tblo.DateOrdered as DateOrdered,
                                      tblo.DateProcessed as DateProcessed
-                              FROM tblorders tblo  INNER JOIN tblusers tblu ON tblo.UserIdTrack =  tblu.IdTrack WHERE tblo.Status = 'Preparing'";
+                              FROM tblorders tblo  INNER JOIN tblusers tblu ON tblo.UserIdTrack =  tblu.IdTrack WHERE tblo.Status = 'Preparing' AND tblo.UserIdTrack = '$userId'";
                     $result = mysqli_query($conn, $query);
 
                     // Display users in table rows
@@ -169,7 +169,7 @@
                                      tblo.ProcessBy as ProcessBy,
                                      tblo.DateOrdered as DateOrdered,
                                      tblo.DateProcessed as DateProcessed
-                              FROM tblorders tblo  INNER JOIN tblusers tblu ON tblo.UserIdTrack =  tblu.IdTrack WHERE tblo.Status = 'Served'";
+                              FROM tblorders tblo  INNER JOIN tblusers tblu ON tblo.UserIdTrack =  tblu.IdTrack WHERE tblo.Status = 'Served' AND tblo.UserIdTrack = '$userId'";
                     $result = mysqli_query($conn, $query);
 
                     // Display users in table rows
