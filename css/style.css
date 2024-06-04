@@ -13,7 +13,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #1a4d80; /* Dark color */
   padding-top: 20px;
   color: #fff; /* Text color */
   border: 1px solid gray; /* Adds a border with gray color */
@@ -21,7 +20,22 @@ body {
   box-shadow: 0 0 75px gray;
   transition: width 0.3s;
 }
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
 
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    #ee7724,
+    #d8363a,
+    #dd3675,
+    #b44593
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
 .sidebar h2 {
   color: #fff;
   text-align: center;
@@ -30,7 +44,6 @@ body {
 /* Add your CSS styles for the top bar and user profile here */
 .topbar {
   margin-top: -20px;
-  background-color: #1a4d80;
   /* Dark color */
   color: #fff;
   padding: 10px;

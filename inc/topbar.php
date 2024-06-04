@@ -1,8 +1,13 @@
-    <div class="topbar">
+    <?php
+    $userName = $_SESSION['userName'];
+    ?>
+
+
+    <div class="topbar gradient-custom-2">
         <div><!-- Empty div for left alignment --></div>
         <div class="user-profile" onclick="toggleLogoutMenu()">
-            <span>Welcome, !</span>
-            <img src="../images/user-icon.png" alt="User Avatar"> <!-- Replace with user icon -->
+            <span>Welcome, <?php echo $userName; ?>!</span>
+            <img src="https://www.hotelbooqi.com/wp-content/uploads/2021/12/128-1280406_view-user-icon-png-user-circle-icon-png.png" alt="User Avatar"> <!-- Replace with user icon -->
             <div class="logout-menu" id="logoutMenu">
                 <a type="button" id="btnProfile" data-toggle="modal" data-target="#viewProfileModal">Profile</a>
                 <a href="../inc/logout.php">Logout</a>

@@ -1,4 +1,4 @@
-    <div class="sidebar">
+    <div class="sidebar gradient-custom-2">
         <footer>
             <img src="https://3.bp.blogspot.com/-FOtYssjD7dQ/WIrHQuREMcI/AAAAAAAAALI/LgNcSUJAgEQAGa6QUqDMzMTDDmam4FezwCPcBGAYYCw/s1600/AB-Order%2BNow.jpg" alt="User Icon" class="user-icon">
         </footer>
